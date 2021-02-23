@@ -1,11 +1,30 @@
 .page {
-  background-color: thistle;
-}
+  .products {
+    width: 90vw;
+    max-width: 1170px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    @media screen and(min-width:768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+    }
 
-.page h1 {
-  color: blueviolet;
-}
+    @media screen and(min-width:992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 
-.text {
-  text-transform: uppercase;
+  span {
+    margin-right: 2rem;
+    color: grey;
+  }
+
+  article {
+    margin: 2rem 0;
+
+    div {
+      height: 15rem;
+    }
+  }
 }
